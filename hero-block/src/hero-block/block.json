@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "hero-block/hero-block",
+	"version": "1.0.0",
+	"title": "Hero Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "A simple custom hero block.",
+	"textdomain": "hero-block",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"foregroundImageId": {
+			"type": "number"
+		},
+		"foregroundImageUrl": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".hero-block-foreground img",
+			"attribute": "src"
+		},
+		"foregroundImageAlt": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".hero-block-foreground img",
+			"attribute": "alt"
+		},
+		"backgroundImageId": {
+			"type": "number"
+		},
+		"backgroundImageUrl": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".hero-block-background img",
+			"attribute": "src"
+		},
+		"backgroundImageAlt": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".hero-block-background img",
+			"attribute": "alt"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./index.css",
+	"viewScript": "file:./view.js"
+}
