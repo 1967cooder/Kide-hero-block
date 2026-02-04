@@ -5,7 +5,7 @@ Perfect for showcasing featured content, images, and calls-to-action.
 
 ## Screenshot
 
-![Hero Block Preview](screenshot.png)
+![Hero Block Preview](images/hero_block_grid.png)
 
 ## Features
 
